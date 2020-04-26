@@ -44,8 +44,9 @@ void add_a_record(Record records[]){
   printf("Classname(Math, English, History)? ");
   scanf("%s",records[num_of_members].classname);
   printf("Email Address?");
-  scanf("%s ",records[num_of_members].email);
+  scanf("%s",records[num_of_members].email);
 
+  getchar();
  //create new member
   FILE* fp1;
   fp1 = fopen("data.txt","a");
