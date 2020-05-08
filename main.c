@@ -75,7 +75,6 @@ void input_handler(char input[], Record records[]){
 }
 
 
-
 // Function: display_menu()
 // Input: none
 // Output: none
@@ -89,13 +88,12 @@ void display_menu(){
 	printf("******************************\n");
 	printf(" 1. Add a new membber\n");
 	printf(" 2. Print all members\n");
-  printf(" 3. update member's detail\n");
+  	printf(" 3. update member's detail\n");
 	printf(" 4. Optimize (defragment) the records\n");
 	printf(" 5. Member statistics\n");
 	printf(" 6. Delete a member\n");
-  printf(" 7. Arrange Data(Sorting)\n");
-  printf(" 8. Update StudyTime\n");
-  printf(" 9. Show Rank (StudyTime)\n");
-  
-  printf(" 99. Quit\n");
+  	printf(" 7. Arrange Data(Sorting)\n");
+  	printf(" 8. Update StudyTime\n");
+  	printf(" 9. Show Rank (StudyTime)\n");
+  	printf(" 99. Quit\n");
 }
