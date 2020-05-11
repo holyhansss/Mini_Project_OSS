@@ -9,4 +9,6 @@ void display_stats(Record[]);
 void arrange_data(Record[]);
 void update_studytime(Record[]);
 void print_studytime_ranking(Record[]);
+void delete_conditionally(Record[]);
 #endif
+
