@@ -171,3 +171,31 @@ void print_studytime_ranking(Record records[]){
   }
   printf("\n");
 }
+
+//Adding a new feature writer : YunPC #2
+//Erase the records of students who have studied below a certain time. 
+void delete_conditionally(Record records[]){
+     int num_of_members = load_all_members(records);
+    int time;
+
+  printf("Erase the records of students who have studied below a certain time.");
+  printf("\nPlease enter the time.");
+  scanf("%d", &time);
+  getchar();
+
+    for(int i=0;i<num_of_members;i++){
+      if(records[i].studyTime < time){
+        strcpy(records[i].name.firstName,"0");
+        strcpy(records[i].name.lastName,"0");
+        records[i].age = 0;
+        strcpy(records[i].email,"0");
+        strcpy(records[i].classname,"0");
+        records[i].studyTime = 0;
+      }
+    }
+
+  //save to Report.txt, data.txt
+  save_report(records,num_of_members);
+  save_data(records,num_of_members);
+}
+

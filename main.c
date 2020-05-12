@@ -68,6 +68,8 @@ void input_handler(char input[], Record records[]){
     update_studytime(records);
   else if(!strcmp(input, "9"))
     print_studytime_ranking(records);
+  else if(!strcmp(input, "10"))
+    delete_conditionally(records);
 	else if(!strcmp(input, "99"))
 		printf("Terminating... bye!\n"); // Quit - no operation (an empty statement with a semi-colon)
 	else
@@ -95,5 +97,7 @@ void display_menu(){
   	printf(" 7. Arrange Data(Sorting)\n");
   	printf(" 8. Update StudyTime\n");
   	printf(" 9. Show Rank (StudyTime)\n");
+    printf(" 10. Delete with condition (StudyTime)\n");
   	printf(" 99. Quit\n");
 }
+
